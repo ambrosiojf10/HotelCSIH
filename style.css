@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lobster Two", sans-serif;
+}
+body{
+    background-color: rgb(226, 196, 151);
+    
+}
+
+/* flex acomoda uno al lado del otro y justify-content: space-between se encarga de tirar el titulo a la izquierda y el nav a la derecha  */
+header{
+    background-color: rgb(218, 195, 166);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 20px;
+    height: 125px;
+   padding: 20px;
+}
+.card-presentacion{
+    background-color: rgb(223, 223, 195);
+    box-shadow: 10px;
+    height: 150px;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+body{
+    background-color: rgb(245, 245, 218);
+}
+p{
+    font-size: 15px;
+    color: rgb(90, 88, 88);
+    margin: 10px;
+}
+
+
+
+/* le da color, saca el subrayado, regula el tamaño de la letra,  */
+a{
+    color: rgb(25, 65, 51);
+    text-decoration: none;
+    font-size: 30px;    
+    margin: 10px;
+}
+
+header a:hover{
+    color: rgb(111, 88, 146);
+}
+
+/* Color y espaciado entre letras */
+h1{
+    color: rgb(25, 65, 51);
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+h2{
+    color: rgb(25, 65, 51);
+    font-size: 35px;
+    text-align: center;
+    
+}
+h3{
+    color: rgb(25, 65, 51);
+    font-size: 40px;
+    text-align: center;
+}
+h4{
+    font-size: 15px;
+    color: rgb(90, 88, 88);
+    text-align: center;
+    
+
+}
+h5{
+    color: rgb(25, 65, 51);
+    font-size: 25px;
+    text-align: center;
+}
+h6{
+    font-size: 20px;
+}
+
+
+
+/* overflow: hidden adapta la imagen a la carta de atras */
+.card{
+    background-color: rgb(223, 223, 195);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 300px;
+    margin: 30px;
+   
+}
+.img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+
+.card_2{
+    background-color:rgb(218, 195, 166);
+    border-radius: 15px;
+    height: 60px;
+    width: 500px;
+    flex-direction: column;
+    margin: 40px;
+    align-items: center;
+    box-shadow: 15px;
+}
+.card_suites{
+    background-color: rgb(223, 223, 195);
+    box-shadow: 10px;
+    height: 500px;
+    justify-content: center;
+    padding: 50px;
+    overflow: hidden;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+}
+/*object-fit: cover es para q la imagen no se deforme */
+.img2{
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+}
+.card-text{
+    width: 60%;
+    justify-content: left;
+    margin: 40px;
+    justify-content: center;
+}
+.card3{
+    background-color: rgb(223, 223, 195);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    margin: 100px;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+inframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: rgb(25, 65, 51);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+   
+}
+button:hover {
+    background-color: rgb(163, 172, 101);
+}
+
+
+footer{
+    background-color: rgb(223, 223, 195);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px); /* Toque moderno */
+}
+
+.modal-contenido {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #888;
+}
+
+/* Formulario Modal */
+#formulario-reserva h2 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="datetime-local"]:focus {
+    border-color: var(--accent-color);
+}
+
+/* Mensaje de Éxito */
+.icono-exito {
+    font-size: 3rem;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+#mensaje-exito h2 {
+    margin-bottom: 5px;
+}
+
+#mensaje-exito p {
+    color:rgb(226, 196, 151);
+}
+
+/* Utilidad */
+.oculto {
+    display: none !important;
+}
+
+
+@media (max-width: 600px) {
+            header {
+             background-color: rgb(224, 179, 111);
+            }
+            .card_2{
+                background-color: rgb(224, 179, 111);
+            }
+        }
+/*gap evita el amontonamiento de todo lo del header*/

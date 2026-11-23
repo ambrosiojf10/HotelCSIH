@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="5-estrellas.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hospitality Industry</h1>
+        <nav>
+            <a href="Index.html">Alojamiento</a>
+            <a href="Habitaciones.html">Habitaciones</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+    </header>
+ <div class="card-presentacion">
+<H2>Experiencias Memorables</H2>
+<h4>Encuentra hoteles para tus proximas vacaciones</h4>
+</div>   
+    <main>
+
+
+      <div class="card">
+                <img class="img" src="villa_rossa.jpg" alt="">  
+            <div class="card-text">
+                <h5>Hotel Villa Rossa</h5>
+                <p>Rodeado por la exuberante Mata Atlántica, ofrece una perfecta combinación de gastronomía de primer nivel, piscinas y contacto directo con la naturaleza.</p>
+            <button class="btn-reservar">Reserva Ahora</button>
+            </div>
+      </div>
+
+
+       <div class="card">
+                <img src="Tangará.jpg" alt="">  
+            <div class="card-text">
+                <h5>Palácio Tangará</h5>
+                <p>Un oasis refinado en medio del Parque Burle Marx. Destaca por sus elegantes habitaciones, spas de lujo y opciones gastronómicas con estrellas Michelin.</p>
+            <button class="btn-reservar">Reserva Ahora</button>
+            </div>
+      </div>
+
+
+      <div class="card">
+                <img src="Rosewood.jpg" alt="">  
+            <div class="card-text">
+                <h5>Rosewood São Paulo</h5>
+                <p>Ubicado en un histórico enclave urbano, es un hito de arquitectura y arte que redefine el concepto de hospitalidad de lujo con diseño de Jean Nouvel.</p>
+            <button class="btn-reservar">Reserva Ahora</button>
+            </div>
+      </div>
+
+
+       <div class="card">
+                <img src="Barracuda.jpg" alt="">  
+            <div class="card-text">
+                <h5>Barracuda Hotel & Villas</h5>
+                <p>Situado en lo alto de una colina con vistas al mar y a la selva tropical, combina un ambiente relajado con suites y villas privadas de alta gama.</p>
+            <button class="btn-reservar">Reserva Ahora</button>
+            </div>
+      </div>
+    </main>
+
+    <div id="modal-reserva" class="modal oculto">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            
+            <div id="formulario-reserva">
+                <h2>Selecciona fecha y hora</h2>
+                <input type="datetime-local" id="fecha-hora" required>
+                <button id="btn-confirmar">Confirmar</button>
+            </div>
+
+            <div id="mensaje-exito" class="oculto">
+                <div class="icono-exito">✓</div>
+                <h2>Reserva Exitosa</h2>
+                <p>Te esperamos pronto.</p>
+            </div>
+        </div>
+    </div>
+
+     <script src="script.js"></script>
+    <footer>
+     <h6>
+        Para mas informacion contactanos.
+     </h6>
+     <h6>
+        GMAIL: HospitalityIndustry@gmail.com
+     </h6>
+     <h6>
+        Nro: +54 9 387 211-9586
+     </h6>
+    </footer>
+
+</body>
+</html>
